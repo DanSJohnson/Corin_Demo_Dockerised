@@ -1,0 +1,4 @@
+[submodule "src/corin"]
+	path = src/corin
+	url = git@github.com:EEEManchester/corin.git
+	branch = dockerised-demo
