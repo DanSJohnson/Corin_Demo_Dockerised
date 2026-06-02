@@ -2,3 +2,6 @@
 	path = src/corin
 	url = git@github.com:EEEManchester/corin.git
 	branch = dockerised-demo
+[submodule "src/DynamixelSDK"]
+	path = src/DynamixelSDK
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK
