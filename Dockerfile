@@ -38,5 +38,5 @@ RUN apt-get update && apt-get install -y \
     python-matplotlib \
     python-networkx
 
-# Define the command, in this case just open a terminal.
-CMD ["bash"]
+# # Define the command, in this case just open a terminal.
+# CMD ["bash"]

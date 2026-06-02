@@ -1,13 +1,16 @@
 # Corin_Demo_Dockerised
 
+> [!CAUTION]
+> This commit is a work in progress! Use the previous commit for all demonstrations!
+
 This repo contains a dockerised form of the basic Corin demo. It imports several submodules including:
 
- - the source code for Corin itself ([commit 820e671](https://github.com/EEEManchester/corin/tree/820e671926b236b740b15547e5f516bfedd0d745))
- - the DynamixelSDK ([commit c7e1eb7](https://github.com/ROBOTIS-GIT/DynamixelSDK/tree/c7e1eb71c911b87f7bdeda3c2c9e92276c2b4627)), which is used to communicate with the motors
- - a fork of the robotis-framework ([commit 6ce52ce](https://github.com/EEEManchester/robotis-framework/tree/6ce52ced9b394c9e6127da31365a1d0ea2974271)), used for communications between processes
- - a ROS driver for the robot's Variense FSE103 force sensors ([commit a5df30d](https://github.com/DanSJohnson/variense_fse103/tree/a5df30de75fbaa05a478d763b6d60937a9f9f207)).
+- the source code for Corin itself ([commit 820e671](https://github.com/EEEManchester/corin/tree/820e671926b236b740b15547e5f516bfedd0d745))
+- the DynamixelSDK ([commit c7e1eb7](https://github.com/ROBOTIS-GIT/DynamixelSDK/tree/c7e1eb71c911b87f7bdeda3c2c9e92276c2b4627)), which is used to communicate with the motors
+- a fork of the robotis-framework ([commit 6ce52ce](https://github.com/EEEManchester/robotis-framework/tree/6ce52ced9b394c9e6127da31365a1d0ea2974271)), used for communications between processes
+- a ROS driver for the robot's Variense FSE103 force sensors ([commit a5df30d](https://github.com/DanSJohnson/variense_fse103/tree/a5df30de75fbaa05a478d763b6d60937a9f9f207)).
 
- This demo is being maintained by [Daniel Derwent](daniel.derwent@manchester.ac.uk). Please contact me if there are any issues.
+ This demo is being maintained by [Daniel Derwent](mailto:daniel.derwent@manchester.ac.uk). Please contact me if there are any issues.
 
 ## How to Use
 
@@ -63,9 +66,9 @@ The demo can be stopped at any time by cancelling any of the terminal processes 
 
 ## Possible problems on launch
 
-The following is a list of common problems on launch and some resolutions. If you are encountering problems that are not in this list, please contact [Daniel](daniel.derwent@manchester.ac.uk) or open an issue.
+The following is a list of common problems on launch and some resolutions. If you are encountering problems that are not in this list, please contact [Daniel](mailto:daniel.derwent@manchester.ac.uk) or open an issue.
 
-### Problem 1: Error opening serial port!
+### Problem 1: Error opening serial port
 
 When you execute `roslaunch corin_manager corin_manager.launch` you may encounter the terminal message:
 
@@ -89,7 +92,7 @@ or words to that effect. If you scroll up, you may also see:
 ...
 ```
 
-for several lines. This happens when communications with the motors aren't being established properly, and can be caused by a number of things. 
+for several lines. This happens when communications with the motors aren't being established properly, and can be caused by a number of things.
 
 #### Solution 1: Hello, IT, have you tried turning it off and on again?
 
@@ -133,7 +136,7 @@ PS C:\windows\system32> usbipd attach --wsl --busid <BUSID>
 
 where `<BUSID>` is the BUSID for the device given in the table (i.e., 2-6 and 2-7 in this case). This should give your WSL instance access to the devices.
 
-### Problem 2: JOINT [blah_blah] does NOT respond!
+### Problem 2: JOINT [blah_blah] does NOT respond
 
 It is also possible when launching the manager that you may see:
 

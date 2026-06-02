@@ -1,0 +1,14 @@
+<launch>
+
+    <!-- Bring up robot system -->
+    <include file="$(find corin_manager)/launch/corin_manager.launch"/>
+
+    <!-- Control layer -->
+    <node pkg="corin_control"
+      type="main.py"
+      name="CorinController"
+      output="screen"
+      launch-prefix="bash -c"/>
+
+
+</launch>

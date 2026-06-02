@@ -9,7 +9,3 @@ Notes on using the FSE103 force sensors
 - Every sensor has a serial number in it's firmware. This can be used to refer to them individually. The Serial numbers can be accessed using "rosrun variense_fse103 list_sensors", or by reading them off the feet (they are all printed on little stickers).
 - I've written a launch file "force_sensors.launch" which sets up all the foot sensors to publish. Topics are force_sensor_x where x ranges from 1 to 6. Sensors are initialised on startup, so they must be off the ground at the time.
 
-=========================================
-Tests
-=========================================
-Robot weight = 4585.3 g (weighed on lab weighing scale)

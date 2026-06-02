@@ -17,5 +17,7 @@ services:
     tty: true
     stdin_open: true
 
-    volumes:
-      - .:/catkin_ws/src
+    # volumes:
+    #   - .:/catkin_ws/src
+
+    command: /catkin_ws/src/entrypoint.sh
