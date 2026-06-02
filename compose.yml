@@ -1,0 +1,21 @@
+#compose.yml
+services:
+  corin_demo:
+    build: .
+    container_name: corin_demo
+
+    network_mode: host
+    privileged: true
+
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/ttyUSB1:/dev/ttyUSB1
+
+    group_add:
+      - dialout
+
+    tty: true
+    stdin_open: true
+
+    volumes:
+      - .:/catkin_ws/src

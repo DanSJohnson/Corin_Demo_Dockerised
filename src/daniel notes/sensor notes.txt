@@ -1,0 +1,15 @@
+========================================
+Notes on using the FSE103 force sensors
+========================================
+
+- The sensors are all connected to two usb hubs at the back of the robot (black usb male cables). These can be connected to the PC via the umbilical, but it means that you cant run the motors when you do so. The hardware will need some minor tweaks to accomodate uusing both at once.
+- The sensors can be interfaced with ROS using a package made by Hassan (available here: https://github.com/h-khalili/fse103_ros_driver)
+- Hassan's package may as well be the official guidance, because the company went bust in 2017(ish) and their website is down with the domain up for sale.
+- The sensors have a parameter called "init_on_start" which can be set true or false on launch. If true, which is the default, the sensor sets the force it is currently experiencing as zero and measures everything else relative to that. This can cause some problems.
+- Every sensor has a serial number in it's firmware. This can be used to refer to them individually. The Serial numbers can be accessed using "rosrun variense_fse103 list_sensors", or by reading them off the feet (they are all printed on little stickers).
+- I've written a launch file "force_sensors.launch" which sets up all the foot sensors to publish. Topics are force_sensor_x where x ranges from 1 to 6. Sensors are initialised on startup, so they must be off the ground at the time.
+
+=========================================
+Tests
+=========================================
+Robot weight = 4585.3 g (weighed on lab weighing scale)
