@@ -8,3 +8,6 @@
 [submodule "src/robotis-framework"]
 	path = src/robotis-framework
 	url = https://github.com/EEEManchester/robotis-framework
+[submodule "src/variense/variense_fse103"]
+	path = src/variense/variense_fse103
+	url = git@github.com:DanSJohnson/variense_fse103.git
