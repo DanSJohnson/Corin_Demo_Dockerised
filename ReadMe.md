@@ -134,7 +134,7 @@ usbipd bind --busid <BUSID>
 usbipd attach --wsl --busid <BUSID>
 ```
 
-where `<BUSID>` is the BUSID for the device given in the table (i.e., 2-6 and 2-7 in this case). This should give your WSL instance access to the devices.
+where `<BUSID>` is the BUSID for the device given in the table (i.e., 2-6 and 2-9 in this case). This should give your WSL instance access to the devices.
 
 ### Problem 2: JOINT [blah_blah] does NOT respond
 
