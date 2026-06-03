@@ -17,7 +17,7 @@ This repo contains a dockerised form of the basic Corin demo. It imports several
 To run the demo, first clone this repository and its submodules:
 
 ``` bash
-git git clone --recurse-submodules git@github.com:DanSJohnson/Corin_Demo_Dockerised.git
+git clone --recurse-submodules git@github.com:DanSJohnson/Corin_Demo_Dockerised.git
 ```
 
 Then navigate to the `Corin_Demo_Dockerised` directory and build the docker image (this will take some time).
