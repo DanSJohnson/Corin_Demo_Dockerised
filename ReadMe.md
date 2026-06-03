@@ -130,8 +130,8 @@ BUSID  VID:PID    DEVICE                                                        
 The devices labelled `USB Serial Converter` are the serial ports. You can give WSL access to them by entering:
 
 ```bash
-PS C:\windows\system32> usbipd bind --busid <BUSID>
-PS C:\windows\system32> usbipd attach --wsl --busid <BUSID>
+usbipd bind --busid <BUSID>
+usbipd attach --wsl --busid <BUSID>
 ```
 
 where `<BUSID>` is the BUSID for the device given in the table (i.e., 2-6 and 2-7 in this case). This should give your WSL instance access to the devices.
